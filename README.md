@@ -4,6 +4,7 @@ MWE of a bug where a generated code from a proto file, that utilizes 'google/pro
 
 Error stacktrace:
 
+```
 08-02 14:55:29.295 13267-13267/com.abdulwasae.protobug E/AndroidRuntime: FATAL EXCEPTION: main
                                                                          Process: com.abdulwasae.protobug, PID: 13267
                                                                          java.lang.VerifyError: Verifier rejected class protobug.v0.GetTimeResp: void protobug.v0.GetTimeResp.mergeTheTime(com.google.protobuf.Timestamp) failed to verify: void protobug.v0.GetTimeResp.mergeTheTime(com.google.protobuf.Timestamp): [0x26] register v5 has type Precise Reference: com.google.protobuf.Timestamp but expected Reference: com.google.protobuf.GeneratedMessageLiteVerifier rejected class protobug.v0.GetTimeResp: java.lang.Object protobug.v0.GetTimeResp.dynamicMethod(com.google.protobuf.GeneratedMessageLite$MethodToInvoke, java.lang.Object, java.lang.Object) failed to verify: java.lang.Object protobug.v0.GetTimeResp.dynamicMethod(com.google.protobuf.GeneratedMessageLite$MethodToInvoke, java.lang.Object, java.lang.Object): [0x8C] register v8 has type Precise Reference: com.google.protobuf.Timestamp but expected Reference: com.google.protobuf.GeneratedMessageLite (declaration of 'protobug.v0.GetTimeResp' appears in /data/app/com.abdulwasae.protobug-1/split_lib_slice_6_apk.apk)
@@ -21,4 +22,4 @@ Error stacktrace:
                                                                              at android.app.ActivityThread.main(ActivityThread.java:6121)
                                                                              at java.lang.reflect.Method.invoke(Native Method)
                                                                              at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:889)
-                                                                             at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:779)
+                                                                             at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:779)```
