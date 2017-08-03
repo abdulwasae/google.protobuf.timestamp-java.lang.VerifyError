@@ -22,4 +22,7 @@ Error stacktrace:
                                                                              at android.app.ActivityThread.main(ActivityThread.java:6121)
                                                                              at java.lang.reflect.Method.invoke(Native Method)
                                                                              at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:889)
-                                                                             at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:779)```
+                                                                             at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:779)
+```
+
+Issue filed: https://github.com/google/protobuf/issues/3441
